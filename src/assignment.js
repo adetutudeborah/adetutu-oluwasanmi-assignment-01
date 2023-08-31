@@ -15,8 +15,6 @@ const assignment = {};
  * @returns number the sum of the numbers from 1 to destination
  */
 
-// Solution to challenge 1
-
 function sumOfNumbersTo(destination) {
     let sum = 0;
   for (let i = 1; i <= destination; i++) {
@@ -28,6 +26,9 @@ function sumOfNumbersTo(destination) {
 const totalSum = sumOfNumbersTo(10)
 console.log(totalSum)
 
+
+assignment.sumOfNumbersTo = sumOfNumbersTo;
+
 /**
  * Challenge - 2
  *
@@ -38,7 +39,6 @@ console.log(totalSum)
  * @param {Number} destination the stopping number
  * @returns the object containing count, sum, arrayOfEvenNumbers from 1 to destination
  */
-
 // Solution to challenge 2
 
 function countEvenNumbersWithin(destination) {
@@ -57,9 +57,6 @@ function countEvenNumbersWithin(destination) {
     }
 
     return {
-        // property value shorthand
-        // when the property name and the value name are the same
-        // you can just write the property name in your object
         count,
         sum,
         arrayOfEvenNumbers
@@ -69,6 +66,7 @@ function countEvenNumbersWithin(destination) {
 const result = countEvenNumbersWithin(10); 
 console.log(result);
 
+assignment.countEvenNumbersWithin = countEvenNumbersWithin;
 
 /**
  * Challenge - 3
